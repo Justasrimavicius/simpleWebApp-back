@@ -10,6 +10,6 @@ const routes = require('./routes/allRoutes');
 
 app.use('/', routes);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`App listening on port ${port}`)
 })
